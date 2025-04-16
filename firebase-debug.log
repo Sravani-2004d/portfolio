@@ -1,0 +1,58 @@
+[debug] [2025-04-16T12:17:44.635Z] ----------------------------------------------------------------------
+[debug] [2025-04-16T12:17:44.641Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\G.SRAVANI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-16T12:17:44.642Z] CLI Version:   14.1.0
+[debug] [2025-04-16T12:17:44.642Z] Platform:      win32
+[debug] [2025-04-16T12:17:44.643Z] Node Version:  v22.12.0
+[debug] [2025-04-16T12:17:44.643Z] Time:          Wed Apr 16 2025 17:47:44 GMT+0530 (India Standard Time)
+[debug] [2025-04-16T12:17:44.644Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-16T12:17:44.659Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-16T12:17:44.660Z] > authorizing via signed-in user (bindug082004@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\G.SRAVANI\OneDrive\Desktop\portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-04-16T12:20:22.949Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:22.950Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:22.952Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-16T12:20:22.952Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"portfolio-gsravani-web","name":"portfolio"}
+[debug] [2025-04-16T12:20:25.928Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-04-16T12:20:25.928Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6459094124159249621"}
+[debug] [2025-04-16T12:20:25.931Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:25.931Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:25.931Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6459094124159249621 [none]
+[debug] [2025-04-16T12:20:27.506Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6459094124159249621 200
+[debug] [2025-04-16T12:20:27.506Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6459094124159249621 {"name":"operations/create_project.global.6459094124159249621"}
+[debug] [2025-04-16T12:20:28.016Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-04-16T12:20:28.017Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:28.017Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:28.017Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6459094124159249621 [none]
+[debug] [2025-04-16T12:20:28.481Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6459094124159249621 200
+[debug] [2025-04-16T12:20:28.481Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6459094124159249621 {"name":"operations/create_project.global.6459094124159249621","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"687195869228","projectId":"portfolio-gsravani-web","lifecycleState":"ACTIVE","name":"portfolio","createTime":"2025-04-16T12:20:26.883375Z"}}
+[debug] [2025-04-16T12:20:28.484Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:28.484Z] Checked if tokens are valid: true, expires at: 1744809139607
+[debug] [2025-04-16T12:20:28.484Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/portfolio-gsravani-web:addFirebase [none]
+[debug] [2025-04-16T12:20:32.449Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/portfolio-gsravani-web:addFirebase 403
+[debug] [2025-04-16T12:20:32.450Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/portfolio-gsravani-web:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-04-16T12:20:32.452Z] Request to https://firebase.googleapis.com/v1beta1/projects/portfolio-gsravani-web:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-04-16T12:20:32.701Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/portfolio-gsravani-web:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\G.SRAVANI\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\G.SRAVANI\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
